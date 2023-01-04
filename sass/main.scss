@@ -1,0 +1,70 @@
+//Sass variable:
+//May need to use double-quotes!
+@use "_variables" as *;
+
+body {
+    background-color: $background-color;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    // removes main from default document flow.
+    justify-content: center;
+}
+
+// Example of nesting selectors: removes the need to repeatedly 
+// prefix with article
+article {
+    background-color: $article-color;
+    width: 47vw;
+    border-radius: 8px 0 0 8px;
+    margin: 0;
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        background-color: black;
+        color: $header-color;
+        text-align: center;
+        margin-bottom: 0;
+        padding: .3em;
+    }
+
+    p {
+        padding: .5em;
+    }
+}
+
+//Extending values from aside -> footer
+aside {
+    background-color: #F2B263;
+    color: $aside-color;
+    width: 500px;
+    padding: 5px;
+    border-radius: 0 8px 8px 0;
+
+    p, h3 {
+        width: 100%;
+    }
+}
+
+footer {
+    //This is where we inherit from aside
+    @extend aside;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    a {
+        text-decoration: none;
+        color: $article-color;
+    }
+}

@@ -1,0 +1,57 @@
+body {
+  background-color: orange;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  background-color: #266573;
+  width: 47vw;
+  border-radius: 8px 0 0 8px;
+  margin: 0;
+}
+article img {
+  width: 100%;
+}
+article h2 {
+  background-color: black;
+  color: #F2AE30;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0.3em;
+}
+article p {
+  padding: 0.5em;
+}
+
+aside, footer {
+  background-color: #F2B263;
+  color: black;
+  width: 500px;
+  padding: 5px;
+  border-radius: 0 8px 8px 0;
+}
+aside p, footer p, aside h3, footer h3 {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #266573;
+}
+
+/*# sourceMappingURL=style.css.map */
